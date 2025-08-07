@@ -8,17 +8,30 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet("/newServelet")
+@WebServlet("/")
 public class newServlet extends HttpServlet {
+	
     private static final long serialVersionUID = 1L;
 
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) 
+  
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) 
+    		throws ServletException, IOException {
+    	doGet(request, response);
+    }
+    
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
     		throws ServletException, IOException {
     	
-    	String nome = request.getParameter("nome");
+    	String action = request.getServletPath();
     	
-    	response.setContentType("text/html;charset=UTF-8");
-    	response.getWriter().println("<h1>Olá, "+ nome +"!<h1>");
-     }
+    	try {
+    		switch (action) {
+    		
+    		case "/nome":
+    			inserirNome(request, response);
+    			break;
+    		}
+    		
+    	}
+    }
 }
