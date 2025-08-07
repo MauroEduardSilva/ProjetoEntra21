@@ -7,24 +7,24 @@
 <body>
     <h1>Cadastrar Usuário</h1>
     
-	<form action="/cadastramento/newServlet.java" method="post">
+	<form method="post" action="/cadastro">
 		<label  for="nome">Nome</label>
-		<input type="text" id="nome" name="nome"><br>
+		<input type="text" id="nome" name="nome" required><br>
 		
 		<label  for="sobrenome">Sobrenome</label>
-		<input type="text" id="sobrenome" name="sobrenome"><br>
+		<input type="text" id="sobrenome" name="sobrenome" required><br>
 		
 		<label  for="apelido">Apelido</label>
 		<input type="text" id="apelido" name="apelido"><br>
 		
 		<label  for="email">Email</label>
-		<input type="text" id="email" name="email"><br>
+		<input type="text" id="email" name="email" required><br>
 		
-		<label  for="senha">Senha</label>
-		<input type="text" id="senha" name="senha"><br>
+		<label  for="senha" required>Senha</label>
+		<input type="password" id="senha" name="senha"><br>
 		
-		<label  for="confirmar">Confirmação da Senha</label>
-		<input type="text" id="confirmar" name="confirmar"><br>
+		<label  for="confirmar" required>Confirmação da Senha</label>
+		<input type="password" id="confirmar" name="confirmar"><br>
 		
 		<button type="submit">Próximo</button><br>
 		<button type="reset">Limpar Fomulário</button>

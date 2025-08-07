@@ -1,1 +1,2 @@
-br\com\detalhamento\servelet\newServlet.class
+br\com\detalhamento\servelet\servlet.class
+br\com\detalhamento\util\conexaoBanco.class
