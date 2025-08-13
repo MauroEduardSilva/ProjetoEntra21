@@ -8,6 +8,8 @@ public class Conquista {
 	private String descricaoConquista;
 	private String iconeConquista;
 	
+	
+	
 	public String getNomeConquista() {
 		return nomeConquista;
 	}
