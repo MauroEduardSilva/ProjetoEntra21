@@ -1,5 +1,7 @@
-package br.com.detalhamento.util;
+package br.com.detalhamento.factory;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConexaoBanco {
@@ -14,7 +16,7 @@ public class ConexaoBanco {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public static Connection getConexao() throws SQLException {
 		return DriverManager.getConnection(URL, USUARIO, SENHA);
 	}

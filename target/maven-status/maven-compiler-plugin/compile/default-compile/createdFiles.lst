@@ -1,0 +1,4 @@
+br\com\detalhamento\factory\ConexaoBanco.class
+br\com\detalhamento\modelo\Usuario.class
+br\com\detalhamento\dao\UsuarioDAO.class
+br\com\detalhamento\modelo\Conquista.class

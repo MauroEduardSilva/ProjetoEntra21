@@ -39,7 +39,7 @@ public class CadastroServlet extends HttpServlet {
     	}
     }
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws Servlet Exception, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     	request.getRequestDispatcher("cadastro-usuario.jsp").forward(request, response);
     }
 }
