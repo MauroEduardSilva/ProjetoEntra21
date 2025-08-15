@@ -32,7 +32,8 @@ public class CadastroServlet extends HttpServlet {
     	try {
     		UsuarioDAO dao = new UsuarioDAO();
     		dao.salvar(u);
-    		request.getRequestDispatcher("sucesso.jsp").forward(request, response);
+    		request.getRequestDispatcher("/webapp/sucesso.jsp").forward(request, response);
+    
     	} catch (SQLException e) {
     		e.printStackTrace();
     		response.getWriter().println("Erro ao salvar: " +e.getMessage());
@@ -40,6 +41,6 @@ public class CadastroServlet extends HttpServlet {
     }
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    	request.getRequestDispatcher("cadastro-usuario.jsp").forward(request, response);
+    	request.getRequestDispatcher("/webapp/cadastro-usuario.jsp").forward(request, response);
     }
 }
