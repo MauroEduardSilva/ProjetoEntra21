@@ -1,5 +1,4 @@
-<html>
-<body>
-<h2>Hello World!</h2>
-</body>
-</html>
+<html><body>
+<h1>Aplicação rodando!</h1>
+<a href="cadastro">Ir para Cadastro</a>
+</body></html>

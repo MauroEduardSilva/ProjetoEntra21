@@ -14,7 +14,7 @@ import br.com.detalhamento.modelo.Usuario;
 
 
 @WebServlet("/cadastro")
-public class CadastroServlet extends HttpServlet {
+public class CadastroUsuarioServlet extends HttpServlet {
 	
     private static final long serialVersionUID = 1L;
 
