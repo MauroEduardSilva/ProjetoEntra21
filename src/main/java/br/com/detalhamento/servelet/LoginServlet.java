@@ -20,7 +20,7 @@ public class LoginServlet extends HttpServlet{
 	
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.getRequestDispatcher("/src/main/webapp/login-usuario.jsp").forward(request, response);
+		request.getRequestDispatcher("/views/usuario/login-usuario.jsp").forward(request, response);
 	}
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -34,10 +34,10 @@ public class LoginServlet extends HttpServlet{
 		if(usuario != null) {
 			HttpSession sessao = request.getSession();
 			sessao.setAttribute("usuarioLogado", usuario);
-			request.getRequestDispatcher("src/main/webapp/login-usuario.jsp").forward(request, response);
+			request.getRequestDispatcher("/views/usuario/login-usuario.jsp").forward(request, response);
 		}else {
 			request.setAttribute("erro","Email ou senha invalidos.");
-			request.getRequestDispatcher("/src/main/webapp/login-usuario.jsp").forward(request, response);
+			request.getRequestDispatcher("/views/usuario/login-usuario.jsp").forward(request, response);
 		}
 	}	
 }

@@ -41,6 +41,6 @@ public class CadastroUsuarioServlet extends HttpServlet {
     }
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    	request.getRequestDispatcher("/webapp/cadastro-usuario.jsp").forward(request, response);
+    	request.getRequestDispatcher("/views/usuario/cadastro-usuario.jsp").forward(request, response);
     }
 }

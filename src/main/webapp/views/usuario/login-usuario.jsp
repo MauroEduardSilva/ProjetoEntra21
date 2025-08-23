@@ -13,6 +13,8 @@
     	<p style="color: red;">${erro}</p>
     </c:if>
     
+    <%@ file="/views/cabecalho/header-logado.jsp" %>
+    
     <form action="login" method="post">
     
     	<label for="email">Email:</label>

@@ -5,13 +5,13 @@ public class Endereco {
 	private String estado;
 	private String cidade;
 	private String bairro;
-	private int CEP;
+	private String CEP;
 	private String logradouro;
 	private String horarioFuncionamento;
 	
 	public Endereco() {}
 	
-	public Endereco(Long id, String estado, String cidade, String bairro, int CEP, String logradouro, String horarioFuncionamento) {
+	public Endereco(Long id, String estado, String cidade, String bairro, String CEP, String logradouro, String horarioFuncionamento) {
 		this.id = id;
 		this.estado = estado;
 		this.cidade = cidade;

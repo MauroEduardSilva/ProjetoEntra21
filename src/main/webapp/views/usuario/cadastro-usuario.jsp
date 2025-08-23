@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -6,7 +7,7 @@
     <title>Cadastro de Usuário</title>
 </head>
 <body>
-    <h1>Cadastro</h1>
+    <%@ include file="/views/cabecalho/header-logado.jsp" %>
  
     <form action="cadastro" method="post">
         <label>Nome:</label>

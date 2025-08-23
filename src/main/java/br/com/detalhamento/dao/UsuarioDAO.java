@@ -37,7 +37,7 @@ public class UsuarioDAO {
 	public void salvar(Usuario usuario) throws SQLException {
 		String sql = "INSERT INTO usuario (nome, sobrenome, apelido, email, senha) VALUES (?, ?, ?, ?, ?)";
 		
-		try (Connection conn = Conexao.getConexao();
+		try (Connection conn = ConexaoBanco.getConexao();
 				PreparedStatement stmt = conn.prepareStatement(sql)){
 			
 			stmt.setString(1, usuario.getNome());
