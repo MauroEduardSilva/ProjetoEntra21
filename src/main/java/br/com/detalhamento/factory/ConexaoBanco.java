@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConexaoBanco {
-	public static final String URL = "jdbc:mysql://localhost:3306/cadastro_usuarios?useSSL=false&serverTimezone=UTC";
+	public static final String URL = "jdbc:mysql://localhost:3306/banco_freetobee?useSSL=false&serverTimezone=UTC";
 	public static final String USUARIO = "root";
 	public static final String SENHA = "root";
 	

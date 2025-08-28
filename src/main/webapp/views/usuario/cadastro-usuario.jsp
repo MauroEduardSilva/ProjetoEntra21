@@ -8,31 +8,46 @@
 </head>
 <body>
     <%@ include file="/views/cabecalho/header-logado.jsp" %>
- 
-    <form action="cadastro" method="post">
-        <label>Nome:</label>
-        <input type="text" name="nome"><br>
-
-        <label>Sobrenome:</label>
-        <input type="text" name="sobrenome"><br>
-        
-        <label>Apelido:</label>
-        <input type="text" name="apelido"><br>
-
-        <label>Email:</label>
-        <input type="email" name="email"><br>
-
-        <label>Senha:</label>
-        <input type="password" id="senha" name="senha"><br>
-
-        <label>Confirmar Senha:</label>
-        <input type="password" id="confirmarSenha" name="confirmarSenha"><br>
-	
-		<p>Já possui uma conta?<a href="login-usuario.jsp">Inicie uma sessão</a></p>
-		
-        <button type="submit">Enviar</button><br>
-         <button type="reset">Limpar</button>
-    </form>
-
+ 	
+ 	<div class="container">
+ 		<form action="cadastro" method="post">
+	 		<div class="formulario">
+	 			<div class="formulario-grupo">
+	 				<label>Nome*</label>
+	        		<input type="text" name="nome" placeholder="">
+	 			</div>
+	 			<div class="formulario-grupo">
+	 				<label>Sobrenome*</label>
+	        		<input type="text" name="sobrenome" placeholder="">
+	 			</div>
+	 		</div>
+	 		<div class="formulario">
+	 			<div class="formulario-grupo">
+	 				<label>Apelido*</label>
+	        		<input type="text" name="apelido" placeholder="">
+	 			</div>
+	 			<div class="formulario-grupo">
+	 				<label>Email*</label>
+	        		<input type="email" name="email" placeholder=""S>
+	 			</div>
+	 		</div>
+	 		<div class="formulario">
+	 			<div class="formulario-grupo">
+	 				<label>Senha*</label>
+	       			<input type="password" id="senha" name="senha" placeholder="">
+	 			</div>
+	 			<div class="formulario">
+	 				<label>Confirmar Senha*</label>
+	        		<input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="">
+	 			</div>
+	 		</div>
+	 		<div class="buttons">
+	 			<p>Já possui uma conta?<a href="${pageContext.request.contextPath}/login">Inicie uma sessão</a></p>
+			
+	        	<button type="submit">Enviar</button><br>
+	         	<button type="reset">Limpar</button>
+	 		</div>
+ 		</form>
+ 	</div>
 </body>
 </html>

@@ -13,7 +13,7 @@
     	<p style="color: red;">${erro}</p>
     </c:if>
     
-    <%@ file="/views/cabecalho/header-logado.jsp" %>
+    <%@ include file="/views/cabecalho/header-logado.jsp" %>
     
     <form action="login" method="post">
     
@@ -27,6 +27,6 @@
     	
     </form>
     
-    	<p>Não possui uma conta? <a href="cadastro-usuario.jsp">Cadastre-se</a></p>
+    	<p>Não possui uma conta? <a href="${pageContext.request.contextPath}/cadastro">Cadastre-se</a></p>
 </body>
 </html>
